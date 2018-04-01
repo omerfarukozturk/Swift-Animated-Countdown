@@ -12,7 +12,7 @@ Views are drawn by CoreAnimation, and you can define CAMediaTimingFunction to se
 
 ## Chart View
 
-![Sample Gif](chart.gif)
+![Sample Gif](chartview.gif)
 
 Add a subview (UIView) to draw the chart, and set ChartView class as reference to related view.. 
 
