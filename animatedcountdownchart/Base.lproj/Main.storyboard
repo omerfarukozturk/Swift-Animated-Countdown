@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animatedcountdownchart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Htl-ag-gr4" customClass="ChartView" customModule="animatedcountdownchart" customModuleProvider="target">
+                                <rect key="frame" x="67" y="223.5" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="930-BB-di7"/>
+                                    <constraint firstAttribute="height" constant="240" id="SMj-gN-ZmK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kX0-64-GNU" customClass="CountdownView" customModule="animatedcountdownchart" customModuleProvider="target">
+                                <rect key="frame" x="87" y="323.5" width="200" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="509-u7-MnD"/>
+                                    <constraint firstAttribute="height" constant="40" id="BX7-Ff-CKZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Htl-ag-gr4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1KD-0k-JuU"/>
+                            <constraint firstItem="kX0-64-GNU" firstAttribute="centerY" secondItem="Htl-ag-gr4" secondAttribute="centerY" id="hCf-XK-Gnz"/>
+                            <constraint firstItem="kX0-64-GNU" firstAttribute="centerX" secondItem="Htl-ag-gr4" secondAttribute="centerX" id="heP-at-p2m"/>
+                            <constraint firstItem="Htl-ag-gr4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o6m-WI-sHv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="Htl-ag-gr4" id="Kn8-UZ-cXX"/>
+                        <outlet property="countdownView" destination="kX0-64-GNU" id="3WR-c0-yBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
