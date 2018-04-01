@@ -7,6 +7,7 @@ Views are drawn by CoreAnimation, and you can define CAMediaTimingFunction to se
 
 ![Sample Gif](fullview.gif)
 
+
 ### Integration Steps
 
 
@@ -85,5 +86,16 @@ And now animate the countdown.
 ```
 self.countdownView.animateCountdown(toValue: toValue)
 ```
+
+# How it works?
+
+There is a UICollectionView that contains UIScrollView inside. And this scrollview also contains UIStackView that contains UILabels that presents numeral digits. I hope it is not mind confusing.
+
+There are two state for animation steps. As seen below, stackView is scrolled inside UIScrollView to show related digit.
+
+Initial State (value : 900.93) |  Final State (value: 247.43)
+:-------------------------:|:-------------------------:
+![Initial State](firstState.jpg)  |  ![Final State](secondState.jpg)
+
 
 That's all.
