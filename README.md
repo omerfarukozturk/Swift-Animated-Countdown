@@ -58,7 +58,7 @@ Do the same steps for CountdownView.
 
 Add a subview (UIView) to draw the chart, and set CountdownView class as reference to related view.. 
 
-Add an IBOutlet to your reference ViewController for ChartView.
+Add an IBOutlet to your reference ViewController for CountdownView.
 
 ```
 @IBOutlet weak var countdownView: CountdownView!
@@ -99,3 +99,5 @@ Initial State (value : 900.93) |  Final State (value: 247.43)
 
 
 That's all.
+
+There is a sample project available.
